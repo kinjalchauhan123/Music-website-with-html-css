@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - myTunes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a4b62b0a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">myTunes</div>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="login.html"><li>Log In</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="signup-section">
+            <div class="container">
+                <h2>Create Your Account</h2>
+                <form action="signup-process.php" method="POST" class="signup-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-lower">
+            <p>Copyright © 2024 myTunes</p>
+        </section>
+    </footer>
+</body>
+</html>

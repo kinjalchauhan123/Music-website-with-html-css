@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Your Free Trial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">myTunes</div>
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="#features"><li>Features</li></a>
+        <a href="#faq"><li>FAQ</li></a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Start Your Free Trial</h1>
+        <h3>Unlimited access to music, movies, and more for 3 months!</h3>
+       
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <h2>Why Choose myTunes?</h2>
+        <div class="features">
+          <div class="feature">
+            <i class="fa fa-music"></i>
+            <h3>Ad-Free Music</h3>
+            <p>Enjoy uninterrupted music streaming.</p>
+          </div>
+          <div class="feature">
+            <i class="fa fa-film"></i>
+            <h3>Exclusive Content</h3>
+            <p>Access premium movies and TV shows.</p>
+          </div>
+          <div class="feature">
+            <i class="fa fa-download"></i>
+            <h3>Offline Access</h3>
+            <p>Download content to enjoy anywhere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign-Up Form Section -->
+    <section class="signup-section">
+      <div class="container">
+        <h2>Sign Up for Free</h2>
+        <form action="submit_trial.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
+          </div>
+          <button type="submit" class="primary-btn">Start Free Trial</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-section">
+          <h2>Frequently Asked Questions</h2>
+      
+          <h4>How long is the free trial?</h4>
+          <p>The free trial lasts for 3 months with no commitments.</p>
+      
+          <h4>Can I cancel anytime?</h4>
+          <p>Yes, you can cancel your trial anytime before it ends.</p>
+      
+          <h4>What happens after the trial ends?</h4>
+          <p>After the trial ends, you will be billed for the subscription unless you cancel before.</p>
+      </div>
+      
+      <script>
+          // Get all the question elements (h4)
+          const questions = document.querySelectorAll('.faq-section h4');
+      
+          // Add click event to each question
+          questions.forEach(question => {
+              question.addEventListener('click', function() {
+                  // Toggle the visibility of the corresponding answer (p)
+                  const answer = this.nextElementSibling;
+                  if (answer.style.display === 'none' || answer.style.display === '') {
+                      answer.style.display = 'block';
+                  } else {
+                      answer.style.display = 'none';
+                  }
+              });
+          });
+      </script>
+      
